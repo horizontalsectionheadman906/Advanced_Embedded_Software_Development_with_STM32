@@ -69,4 +69,4 @@ The projects are categorized by their development stages and core concepts:
 ## ⚙️ Installation and Usage
 1. Clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/yunus-kunduz/Advanced_Embedded_Software_Development_with_STM32.git](https://github.com/yunus-kunduz/Advanced_Embedded_Software_Development_with_STM32.git)
+   git clone https://github.com/yunus-kunduz/Advanced_Embedded_Software_Development_with_STM32.git
