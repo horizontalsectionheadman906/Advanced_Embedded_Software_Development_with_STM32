@@ -1,6 +1,6 @@
 # STM32 Advanced Embedded Software Development Projects
 
-This repository contains projects, custom driver software, and hardware control applications developed as part of the **"Advanced Embedded Software Development with STM32"** course on BTK Academy.
+This repository contains projects, custom driver software, and hardware control applications developed as part of the **"Advanced Embedded Software Development with STM32"** course on BTK Akademi.
 
 Built from scratch in alignment with the course curriculum, these projects cover advanced embedded systems concepts ranging from basic GPIO control to Direct Memory Access (DMA), USB OTG, Low Power modes, IMU sensor data processing, and Nextion HMI display management.
 
